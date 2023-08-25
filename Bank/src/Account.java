@@ -3,16 +3,13 @@ public class Account {
     private float amount;
     private String name;
     private String password;
-    public Account(int a, String n, float am) {
+
+    public Account(int a, String n, float am, String p) {
         this.accNo = a;
         this.name = n;
         this.amount = am;
+        this.password = p;
     }
-    public Account(int a, String n, float am, String p) {
-        this(a,n,am);
-        this.password=p;
-    }
-
     public void deposit(float am) {
         this.amount += am;
         System.out.println("Successfully deposited " + am);
