@@ -10,6 +10,7 @@ public class Account {
     }
     public Account(int a, String n, float am, String p) {
         this(a,n,am);
+        this.password=p;
     }
 
     public void deposit(float am) {
@@ -36,6 +37,7 @@ public class Account {
                 "accNo=" + accNo +
                 ", amount=" + amount +
                 ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
