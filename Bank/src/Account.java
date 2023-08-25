@@ -2,11 +2,14 @@ public class Account {
     private int accNo;
     private float amount;
     private String name;
-
+    private String password;
     public Account(int a, String n, float am) {
         this.accNo = a;
         this.name = n;
         this.amount = am;
+    }
+    public Account(int a, String n, float am, String p) {
+        this(a,n,am);
     }
 
     public void deposit(float am) {
