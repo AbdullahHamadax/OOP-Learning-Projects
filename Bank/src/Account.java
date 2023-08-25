@@ -3,7 +3,7 @@ public class Account {
     private float amount;
     private String name;
 
-    public void insert(int a, String n, float am) {
+    public Account(int a, String n, float am) {
         this.accNo = a;
         this.name = n;
         this.amount = am;
