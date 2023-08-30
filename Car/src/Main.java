@@ -12,10 +12,10 @@ public class Main {
     }
 
     static void initialData() {
-        m.add(new Motorcycle("Harley-Davidson", "Sportster", 12000, 5,"FreeBikerClothes"));
-        m.add(new Motorcycle("Raven X1", "RXT-500", 9999, 10, "FreeBikerClothes"));
-        m.add(new Motorcycle("Viper V2", "VP-750S", 12499, 12, "NoBikerClothes"));
-        m.add(new Motorcycle("Zenith Z5", "ZNX-3000R", 8799, 7, "NoBikerClothes"));
+        m.add(new Motorcycle("Harley-Davidson", "Sportster", 12000, 5,"Yes"));
+        m.add(new Motorcycle("Raven X1", "RXT-500", 9999, 10, "No"));
+        m.add(new Motorcycle("Viper V2", "VP-750S", 12499, 12, "Yes"));
+        m.add(new Motorcycle("Zenith Z5", "ZNX-3000R", 8799, 7, "No"));
         t.add(new Truck("Ford", "F-150", 40000, 9, "OpenTruck"));
         t.add(new Truck("Atlas Prime Mover", "APM-350", 55900, 30,"TrailerTruck"));
         t.add(new Truck("Goliath XL", "GX-5000", 64750, 20,"ContainerTruck"));
@@ -32,19 +32,19 @@ public class Main {
         System.out.println("Choice: " + choice);
         if (choice == 'A' || choice == 'a') {
             System.out.println("Motorycles:");
-            System.out.println("----------------------------------------------------------------------");
-            System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity");
-            System.out.println("----------------------------------------------------------------------");
+            System.out.println("-----------------------------------------------------------------------------------------");
+            System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity", "FreeBikerClothes");
+            System.out.println("-----------------------------------------------------------------------------------------");
             for (Motorcycle motorcycle : m) {
-                System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d\n", motorcycle.getId(), motorcycle.getName(), motorcycle.getModel(), motorcycle.getPrice(), motorcycle.getQuantity());
+                System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d | %-8s\n", motorcycle.getId(), motorcycle.getName(), motorcycle.getModel(), motorcycle.getPrice(), motorcycle.getQuantity(), motorcycle.getFreeBikerClothes());
             }
         } else if (choice == 'B' || choice == 'b') {
             System.out.println("Trucks:");
-            System.out.println("----------------------------------------------------------------------");
-            System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity");
-            System.out.println("----------------------------------------------------------------------");
+            System.out.println("-----------------------------------------------------------------------------------------");
+            System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s | %-10s\n", "ID", "Name", "Model", "Price", "Quantity", "Container Type");
+            System.out.println("-----------------------------------------------------------------------------------------");
             for (Truck truck : t) {
-                System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d\n", truck.getId(), truck.getName(), truck.getModel(), truck.getPrice(), truck.getQuantity());
+                System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d | %-10s\n", truck.getId(), truck.getName(), truck.getModel(), truck.getPrice(), truck.getQuantity(), truck.getContainerType());
             }
         } else System.out.println("ERROR!, Invalid choice!");
     }

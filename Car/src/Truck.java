@@ -4,4 +4,12 @@ public class Truck extends Vehicle {
         super(name, model, price, quantity);
         this.containerType=type;
     }
+
+    public String getContainerType() {
+        return containerType;
+    }
+
+    public void setContainerType(String containerType) {
+        this.containerType = containerType;
+    }
 }
