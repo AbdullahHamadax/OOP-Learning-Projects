@@ -12,14 +12,14 @@ public class Main {
     }
 
     static void initialData() {
-        m.add(new Motorcycle("Harley-Davidson", "Sportster", 12000, 5));
-        m.add(new Motorcycle("Raven X1", "RXT-500", 9999, 10));
-        m.add(new Motorcycle("Viper V2", "VP-750S", 12499, 12));
-        m.add(new Motorcycle("Zenith Z5", "ZNX-3000R", 8799, 7));
-        t.add(new Truck("Ford", "F-150", 40000, 9));
-        t.add(new Truck("Atlas Prime Mover", "APM-350", 55900, 30));
-        t.add(new Truck("Goliath XL", "GX-5000", 64750, 20));
-        t.add(new Truck("Chevrolet", "Silverado", 38000, 1));
+        m.add(new Motorcycle("Harley-Davidson", "Sportster", 12000, 5,"FreeBikerClothes"));
+        m.add(new Motorcycle("Raven X1", "RXT-500", 9999, 10, "FreeBikerClothes"));
+        m.add(new Motorcycle("Viper V2", "VP-750S", 12499, 12, "NoBikerClothes"));
+        m.add(new Motorcycle("Zenith Z5", "ZNX-3000R", 8799, 7, "NoBikerClothes"));
+        t.add(new Truck("Ford", "F-150", 40000, 9, "OpenTruck"));
+        t.add(new Truck("Atlas Prime Mover", "APM-350", 55900, 30,"TrailerTruck"));
+        t.add(new Truck("Goliath XL", "GX-5000", 64750, 20,"ContainerTruck"));
+        t.add(new Truck("Chevrolet", "Silverado", 38000, 1,"TrailerTruck"));
     }
 
     public static void proceed() {
