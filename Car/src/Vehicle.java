@@ -1,9 +1,6 @@
 public class Vehicle {
-    private String name;
-    private String model;
-    private int price;
-    private int quantity=0;
-    private int id;
+    private String name, model;
+    private int price, quantity=0, id;
     private static int c=1;
     public Vehicle(String name, String model, int price, int quantity) {
         this.id = c++;
