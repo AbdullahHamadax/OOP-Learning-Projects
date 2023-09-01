@@ -101,6 +101,8 @@ public class Main {
         int userChoice = 0;
         while (userChoice != 3) {
             System.out.println("----------------------------------------------------------------------");
+            System.out.println(("Welcome to Vehicle Rental System, designed by Abdullah Hamada"));;
+            System.out.println("----------------------------------------------------------------------");
             System.out.println("Please choose a valid option(1-3)");
             System.out.println("1. View available Vehicles");
             System.out.println("2. Rent a Vehicle");
