@@ -2,6 +2,7 @@ public class Vehicle {
     private String name, model;
     private int price, quantity=0, id;
     private static int c=1;
+    private int taxes;
     public Vehicle(String name, String model, int price, int quantity) {
         this.id = c++;
         this.name = name;
@@ -48,5 +49,13 @@ public class Vehicle {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public int getTaxes() {
+        return 2;
+    }
+
+    public void setTaxes(int taxes) {
+        this.taxes = taxes;
     }
 }

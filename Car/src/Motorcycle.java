@@ -12,4 +12,10 @@ public class Motorcycle extends Vehicle {
     public void setFreeBikerClothes(String freeBikerClothes) {
         this.freeBikerClothes = freeBikerClothes;
     }
+
+    @Override
+    public int getTaxes() {
+        return 10; // 10% taxes
+    }
+
 }

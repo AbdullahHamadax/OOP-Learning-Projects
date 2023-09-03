@@ -9,6 +9,11 @@ public class Truck extends Vehicle {
         return containerType;
     }
 
+
+    @Override
+    public int getTaxes() {
+        return 15; // 15% taxes.
+    }
     public void setContainerType(String containerType) {
         this.containerType = containerType;
     }
