@@ -21,10 +21,10 @@ public class Main {
         t.add(new Truck("Atlas Prime Mover", "APM-350", 55900, 30, "TrailerTruck"));
         t.add(new Truck("Goliath XL", "GX-5000", 64750, 20, "ContainerTruck"));
         t.add(new Truck("Chevrolet", "Silverado", 38000, 1, "TrailerTruck"));
-        c.add(new Car("Toyota", "Camary", 25000, 15));
-        c.add(new Car("Honda", "Civic", 22000, 12));
-        c.add(new Car("Ford", "Mustang", 35000, 8));
-        c.add(new Car("BMW", "3 Series", 42000, 10));
+        c.add(new Car("Toyota", "Camary", 25000, 15, "Sedan"));
+        c.add(new Car("Honda", "Civic", 22000, 12, "Sedan"));
+        c.add(new Car("Ford", "Mustang", 35000, 8, "Sports Car"));
+        c.add(new Car("BMW", "3 Series", 42000, 10, "Sedan"));
     }
 
     public static void proceed() {
@@ -38,7 +38,7 @@ public class Main {
         if (choice == 'A' || choice == 'a') {
             System.out.println("Motorcycles:");
             System.out.println("---------------------------------------------------------------------------------------------------");
-            System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s | %-15s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity", "BikerClothes", "Taxes");
+            System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s | %-15s | %-12s\n", "ID", "Name", "Model", "Price", "Quantity", "BikerClothes", "Taxes");
             System.out.println("---------------------------------------------------------------------------------------------------");
             for (Motorcycle motorcycle : m) {
                 System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d | %-15s | %d%%\n", motorcycle.getId(), motorcycle.getName(), motorcycle.getModel(), motorcycle.getPrice(), motorcycle.getQuantity(), motorcycle.getFreeBikerClothes(), motorcycle.getTaxes());
@@ -53,11 +53,11 @@ public class Main {
             }
         } else if (choice == 'C' || choice == 'c') {
             System.out.println("Cars:");
-            System.out.println("---------------------------------------------------------------------------------------------------");
-            System.out.printf("%-5s | %-10s | %-15s | %-10s | %-10s | %-20s \n", "ID", "Name", "Model", "Price", "Quantity", "Taxes");
-            System.out.println("---------------------------------------------------------------------------------------------------");
+            System.out.println("-----------------------------------------------------------------------------");
+            System.out.printf("%-5s | %-10s | %-10s | %-10s | %-10s | %-10s | %-20s\n", "ID", "Name", "Model", "Price", "Quantity", "Taxes", "Type");
+            System.out.println("-----------------------------------------------------------------------------");
             for (Car car : c) {
-                System.out.printf("%-5s | %-10s | %-15s | %-10d | %-10s | %d%%\n", car.getId(), car.getName(), car.getModel(), car.getPrice(), car.getQuantity(), car.getTaxes());
+                System.out.printf("%-5s | %-10s | %-10s | %-10d | %-10s | %d%%        | %-20s\n", car.getId(), car.getName(), car.getModel(), car.getPrice(), car.getQuantity(), car.getTaxes(), car.getCarType());
             }
         } else System.out.println("ERROR!, Invalid choice!");
     }
@@ -130,19 +130,19 @@ public class Main {
         if (choice == 'a' || choice == 'A') {
             System.out.println("Enter Moto name: ");
             String vName = input.next();
-            if(!vName.matches("[a-zA-Z]+")){
+            if (!vName.matches("[a-zA-Z]+")) {
                 do {
                     System.out.println("Please enter a valid name A-Z or a-z");
-                    vName=input.next();
+                    vName = input.next();
                 } while (!vName.matches("[a-zA-Z]+"));
             }
             System.out.println("Enter Moto price: ");
             int vPrice = input.nextInt();
-            if(vPrice<5000){
+            if (vPrice < 5000) {
                 do {
                     System.out.println("The price is below *5000*, Please enter a valid price!");
-                    vPrice=input.nextInt();
-                } while (vPrice<5000);
+                    vPrice = input.nextInt();
+                } while (vPrice < 5000);
             }
             System.out.println("Enter Moto quantity: ");
             int vQuantity = input.nextInt();
@@ -161,19 +161,19 @@ public class Main {
         } else if (choice == 'b' || choice == 'B') {
             System.out.println("Enter Truck name: ");
             String tName = input.next();
-            if(!tName.matches("[a-zA-Z]+")){
+            if (!tName.matches("[a-zA-Z]+")) {
                 do {
                     System.out.println("Please enter a valid name A-Z or a-z");
-                    tName=input.next();
+                    tName = input.next();
                 } while (!tName.matches("[a-zA-Z]+"));
             }
             System.out.println("Enter Truck price: ");
             int tPrice = input.nextInt();
-            if(tPrice<20000){
+            if (tPrice < 20000) {
                 do {
                     System.out.println("The price is below *$20000*, Please enter a valid price!");
-                    tPrice=input.nextInt();
-                } while (tPrice<20000);
+                    tPrice = input.nextInt();
+                } while (tPrice < 20000);
             }
             System.out.println("Enter Truck quantity: ");
             int tQuantity = input.nextInt();
@@ -181,40 +181,75 @@ public class Main {
             String tModel = input.next();
             System.out.println("Enter containerType (OpenTruck,ContainerTruck,TrailerTruck): ");
             String tContainer = input.next();
-            if (!tContainer.equals("OpenTruck") && !tContainer.equals("ContainerTruck")&& !tContainer.equals("TrailerTruck")) {
+            if (!tContainer.equals("OpenTruck") && !tContainer.equals("ContainerTruck") && !tContainer.equals("TrailerTruck")) {
                 do {
                     System.out.println("Please enter *OpenTruck* or *ContainerTruck* or *TrailerTruck* (no asterisk): ");
                     tContainer = input.next();
-                } while (!tContainer.equals("OpenTruck") && !tContainer.equals("ContainerTruck")&& !tContainer.equals("TrailerTruck"));
+                } while (!tContainer.equals("OpenTruck") && !tContainer.equals("ContainerTruck") && !tContainer.equals("TrailerTruck"));
             }
             Truck newTruck = new Truck(tName, tModel, tPrice, tQuantity, tContainer);
             t.add(newTruck);
-        }
-        else if (choice == 'c' || choice == 'C') {
+        } else if (choice == 'c' || choice == 'C') {
             System.out.println("Enter Car name: ");
             String cName = input.next();
-            if(!cName.matches("[a-zA-Z]+")){
+            if (!cName.matches("[a-zA-Z]+")) {
                 do {
                     System.out.println("Please enter a valid name A-Z or a-z");
-                    cName=input.next();
+                    cName = input.next();
                 } while (!cName.matches("[a-zA-Z]+"));
             }
             System.out.println("Enter Car price: ");
             int cPrice = input.nextInt();
-            if(cPrice<20000){
+            if (cPrice < 20000) {
                 do {
                     System.out.println("The price is below *$20000*, Please enter a valid price!");
-                    cPrice=input.nextInt();
-                } while (cPrice<20000);
+                    cPrice = input.nextInt();
+                } while (cPrice < 20000);
             }
-            System.out.println("Enter Car quantity: ");
+            System.out.println("Enter Car Quantity: ");
             int cQuantity = input.nextInt();
             System.out.println("Enter Car Model: ");
             String cModel = input.next();
-            System.out.println("Enter containerType (OpenTruck,ContainerTruck,TrailerTruck): ");
-            String tContainer = input.next();
-            Car newCar= new Car(cName, cModel, cPrice, cQuantity);
+            System.out.println("Enter Car Type (SportsCar,Sedan,EV) *No Spaces*: ");
+            String cType = input.next();
+            if (!cType.equals("SportsCar") && !cType.equals("Sedan") && !cType.equals("EV")) {
+                do {
+                    System.out.println("Please enter *SportsCar* or *Sedan* or *EV* (no asterisk): ");
+                    cType = input.next();
+                } while (!cType.equals("SportsCar") && !cType.equals("Sedan") && !cType.equals("EV"));
+            }
+            Car newCar = new Car(cName, cModel, cPrice, cQuantity, cType);
             c.add(newCar);
+        }
+    }
+
+    static void displayMotorcycles() {
+        System.out.println("Motorcycles:");
+        System.out.println("---------------------------------------------------------------------------------------------------");
+        System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s | %-15s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity", "BikerClothes", "Taxes");
+        System.out.println("---------------------------------------------------------------------------------------------------");
+        for (Motorcycle motorcycle : m) {
+            System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d | %-15s | %d%%\n", motorcycle.getId(), motorcycle.getName(), motorcycle.getModel(), motorcycle.getPrice(), motorcycle.getQuantity(), motorcycle.getFreeBikerClothes(), motorcycle.getTaxes());
+        }
+    }
+
+    static void displayTrucks() {
+        System.out.println("Trucks:");
+        System.out.println("---------------------------------------------------------------------------------------------------");
+        System.out.printf("%-5s | %-20s | %-15s | %-10s | %-10s | %-20s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity", "Container Type", "Taxes");
+        System.out.println("---------------------------------------------------------------------------------------------------");
+        for (Truck truck : t) {
+            System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-10d | %-20s | %d%%\n", truck.getId(), truck.getName(), truck.getModel(), truck.getPrice(), truck.getQuantity(), truck.getContainerType(), truck.getTaxes());
+        }
+    }
+
+    static void displayCars() {
+        System.out.println("Cars:");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.printf("%-5s | %-10s | %-10s | %-10s | %-10s | %-10s | %-20s\n", "ID", "Name", "Model", "Price", "Quantity", "Taxes", "Type");
+        System.out.println("-----------------------------------------------------------------------------");
+        for (Car car : c) {
+            System.out.printf("%-5s | %-10s | %-10s | %-10d | %-10s | %d%%        | %-20s\n", car.getId(), car.getName(), car.getModel(), car.getPrice(), car.getQuantity(), car.getTaxes(), car.getCarType());
         }
     }
 
@@ -260,32 +295,12 @@ public class Main {
                     System.out.println("B. Trucks");
                     System.out.println("C. Cars");
                     char vehicleChoice = input.next().charAt(0);
-                    if(vehicleChoice=='a'||vehicleChoice=='A') {
-                        System.out.println("Motorcycles:");
-                        System.out.println("---------------------------------------------------------------------------------------------------");
-                        System.out.printf("%-5s | %-20s | %-15s | %-10s | %-8s | %-15s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity", "BikerClothes", "Taxes");
-                        System.out.println("---------------------------------------------------------------------------------------------------");
-                        for (Motorcycle motorcycle : m) {
-                            System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-8d | %-15s | %d%%\n", motorcycle.getId(), motorcycle.getName(), motorcycle.getModel(), motorcycle.getPrice(), motorcycle.getQuantity(), motorcycle.getFreeBikerClothes(), motorcycle.getTaxes());
-                        }
-                    }
-                    else if(vehicleChoice=='b'||vehicleChoice=='B') {
-                        System.out.println("Trucks:");
-                        System.out.println("---------------------------------------------------------------------------------------------------");
-                        System.out.printf("%-5s | %-20s | %-15s | %-10s | %-10s | %-20s | %-8s\n", "ID", "Name", "Model", "Price", "Quantity", "Container Type", "Taxes");
-                        System.out.println("---------------------------------------------------------------------------------------------------");
-                        for (Truck truck : t) {
-                            System.out.printf("%-5s | %-20s | %-15s | $%-9d | %-10d | %-20s | %d%%\n", truck.getId(), truck.getName(), truck.getModel(), truck.getPrice(), truck.getQuantity(), truck.getContainerType(), truck.getTaxes());
-                        }
-                    }
-                    else if(vehicleChoice=='c'||vehicleChoice=='C') {
-                        System.out.println("Cars:");
-                        System.out.println("---------------------------------------------------------------------------------------------------");
-                        System.out.printf("%-5s | %-10s | %-15s | %-10s | %-10s | %-20s \n", "ID", "Name", "Model", "Price", "Quantity", "Taxes");
-                        System.out.println("---------------------------------------------------------------------------------------------------");
-                        for (Car car : c) {
-                            System.out.printf("%-5s | %-10s | %-15s | %-10d | %-10s | %d%%\n", car.getId(), car.getName(), car.getModel(), car.getPrice(), car.getQuantity(), car.getTaxes());
-                        }
+                    if (vehicleChoice == 'a' || vehicleChoice == 'A') {
+                        displayMotorcycles();
+                    } else if (vehicleChoice == 'b' || vehicleChoice == 'B') {
+                        displayTrucks();
+                    } else if (vehicleChoice == 'c' || vehicleChoice == 'C') {
+                        displayCars();
                     }
                     System.out.println("Please enter the desired Vehicle ID: ");
                     int carID = input.nextInt();
@@ -302,9 +317,12 @@ public class Main {
                     System.out.println("C. Cars");
                     char vChoice = input.next().charAt(0);
                     addVehicle(vChoice);
-                    if(vChoice=='c'||vChoice=='C') System.out.println("Your desired *Car* has been added successfully!");
-                    else if(vChoice=='b'||vChoice=='B') System.out.println("Your desired *Truck* has been added successfully!");
-                    else if(vChoice=='a'||vChoice=='A') System.out.println("Your desired *Motorcycle* has been added successfully!");
+                    if (vChoice == 'c' || vChoice == 'C')
+                        System.out.println("Your desired *Car* has been added successfully!");
+                    else if (vChoice == 'b' || vChoice == 'B')
+                        System.out.println("Your desired *Truck* has been added successfully!");
+                    else if (vChoice == 'a' || vChoice == 'A')
+                        System.out.println("Your desired *Motorcycle* has been added successfully!");
                     else System.out.println("That was an invalid choice!");
                     proceed();
                 }
