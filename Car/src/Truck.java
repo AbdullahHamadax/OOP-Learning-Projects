@@ -1,4 +1,4 @@
-public class Truck extends Vehicle {
+public class Truck extends Vehicle { // Truck IS-A vehicle so it makes sense
     String containerType;
 
     public Truck(String name, String model, int price, int quantity, String type) {

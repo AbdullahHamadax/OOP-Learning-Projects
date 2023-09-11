@@ -85,17 +85,21 @@ public class Main {
             if (!foundMotorcycle) {
                 System.out.println("No Motorcycle was found with ID: " + vehicleID);
             }
-        } else if (vehicleChoice == 'b' || vehicleChoice == 'B') {
+        } if (vehicleChoice == 'b' || vehicleChoice == 'B') {
             boolean foundTruck = false;
             for (Truck truck : t) {
                 if (truck.getId() == vehicleID) {
                     foundTruck = true;
-                    if (truck.getQuantity() > 0) {
+                    if (truck.getQuantity() > 0 && vehiclePrice == truck.getPrice()) {
                         truck.setQuantity(truck.getQuantity() - 1);
                         System.out.println("Truck " + truck.getName() + " with ID: " + truck.getId() + " has been rented successfully!");
+                        System.out.println("Remaining Quantity: " + truck.getQuantity());
                         return;
-                    } else {
+                    } else if (truck.getQuantity() == 0) {
                         System.out.println("No available Quantity was found for Truck: " + truck.getName() + " with ID: " + truck.getId());
+                        return;
+                    } else if (vehiclePrice != truck.getPrice()) {
+                        System.out.println("Incorrect price for Truck: " + truck.getName() + " with ID: " + truck.getId());
                         return;
                     }
                 }
@@ -103,17 +107,21 @@ public class Main {
             if (!foundTruck) {
                 System.out.println("No Truck was found with ID: " + vehicleID);
             }
-        } else if (vehicleChoice == 'c' || vehicleChoice == 'C') {
+        } if (vehicleChoice == 'c' || vehicleChoice == 'C') {
             boolean foundCar = false;
             for (Car car : c) {
                 if (car.getId() == vehicleID) {
                     foundCar = true;
-                    if (car.getQuantity() > 0) {
+                    if (car.getQuantity() > 0 && vehiclePrice == car.getPrice()) {
                         car.setQuantity(car.getQuantity() - 1);
-                        System.out.println("Truck " + car.getName() + " with ID: " + car.getId() + " has been rented successfully!");
+                        System.out.println("Car " + car.getName() + " with ID: " + car.getId() + " has been rented successfully!");
+                        System.out.println("Remaining Quantity: " + car.getQuantity());
                         return;
-                    } else {
-                        System.out.println("No available Quantity was found for Truck: " + car.getName() + " with ID: " + car.getId());
+                    } else if (car.getQuantity() == 0) {
+                        System.out.println("No available Quantity was found for Car: " + car.getName() + " with ID: " + car.getId());
+                        return;
+                    } else if (vehiclePrice != car.getPrice()) {
+                        System.out.println("Incorrect price for Car: " + car.getName() + " with ID: " + car.getId());
                         return;
                     }
                 }

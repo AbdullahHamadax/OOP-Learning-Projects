@@ -1,4 +1,4 @@
-public class Car extends Vehicle {
+public class Car extends Vehicle { // Car IS-A vehicle so it makes sense
     private String carType;
     public Car(String name, String model, int price, int quantity, String type) {
         super(name, model, price, quantity);
