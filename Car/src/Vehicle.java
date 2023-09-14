@@ -1,13 +1,15 @@
-public class Vehicle {
+abstract public class Vehicle {
     private String name, model;
     private int price, quantity=0, id;
+    public int manufacturingYear; // I had to make it public so I can access it  within the subclasses
     private static int c=1, taxes;
-    public Vehicle(String name, String model, int price, int quantity) {
+    public Vehicle(String name, String model, int price, int quantity, int manufacturingYear) {
         this.id = c++;
         this.name = name;
         this.model = model;
         this.price = price;
         this.quantity = quantity;
+        this.manufacturingYear=manufacturingYear;
     }
 
     public int getId() {
@@ -50,12 +52,15 @@ public class Vehicle {
         this.quantity = quantity;
     }
 
-    public int getTaxes() {
-        return 2;
-    }
+    public abstract int getTaxes();
 
     public void setTaxes(int taxes) {
         this.taxes = taxes;
     }
 
+    abstract int getManufacturingYear();
+
+    public void setManufacturingYear(int manufacturingYear) {
+        this.manufacturingYear = manufacturingYear;
+    }
 }
