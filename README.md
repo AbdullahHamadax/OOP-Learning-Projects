@@ -1,3 +1,5 @@
+I see what you mean about the visible ```bash. It's caused by the triple backticks not being properly formatted. To fix this, you can add an extra line break before and after the code block. Here's the corrected version:
+
 ```markdown
 # 🚗 OOP Learning Projects 🏍
 
@@ -26,14 +28,14 @@ Before you start, make sure you have the following:
 
 1. Clone the repository to your local machine:
 
-```bash
-git clone https://github.com/AbdullahHamadax/OOP-Learning-Projects.git
- ```
+   ```bash
+   git clone https://github.com/AbdullahHamadax/OOP-Learning-Projects.git
+   ```
 
 2. Open the project in your preferred IDE.
 
 3. Run the `Main.java` file to start the Vehicle Rental System.
-```
+
 ## 📝 Usage
 
 1. Upon launching the application, you will be presented with a menu with the following options:
@@ -77,3 +79,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 3. Make your changes and test them thoroughly.
 4. Commit your changes and create a pull request.
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
