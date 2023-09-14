@@ -20,7 +20,7 @@ Welcome to the **Vehicle Rental System** project! This Java-based console applic
 Before you start, make sure you have the following:
 
 - Java Development Kit (JDK) ☕
-- Integrated Development Environment (IDE) or Text Editor such as IntelliJ IDEA, or the one and only Visual Studio Code 🧪
+- Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code 🧪
 
 ## 🛠 Getting Started
 
@@ -28,7 +28,8 @@ Before you start, make sure you have the following:
 
 ```bash
 git clone https://github.com/AbdullahHamadax/OOP-Learning-Projects.git
-```
+ ```
+
 2. Open the project in your preferred IDE.
 
 3. Run the `Main.java` file to start the Vehicle Rental System.
@@ -75,3 +76,5 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and test them thoroughly.
 4. Commit your changes and create a pull request.
+```
+
