@@ -1,5 +1,5 @@
 # OOP-Learning-Projects
-I will be making simple and concise ( possibly one ) projects in this repo for the purpoose of learning OOP concepts.
+I will be making simple and concise ( possibly one ) projects in this repo for the purpose of learning OOP concepts.
 
 # Vehicle Rental System
 
