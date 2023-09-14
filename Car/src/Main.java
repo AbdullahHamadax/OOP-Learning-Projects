@@ -23,7 +23,7 @@ public class Main {
         t.add(new Truck("Chevrolet", "Silverado", 38000, 1, "TrailerTruck",2023));
         c.add(new Car("Toyota", "Camary", 25000, 15, "Sedan",2022));
         c.add(new Car("Honda", "Civic", 22000, 12, "Sedan",2023));
-        c.add(new Car("Ford", "Mustang", 35000, 8, "Sports Car",2024));
+        c.add(new Car("Ford", "Mustang", 35000, 8, "SportsCar",2024));
         c.add(new Car("BMW", "3 Series", 42000, 10, "Sedan",2024));
     }
 

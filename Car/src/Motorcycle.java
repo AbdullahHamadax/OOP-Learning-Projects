@@ -22,6 +22,4 @@ public class Motorcycle extends Vehicle { // Motorcycle IS-A vehicle so it makes
     int getManufacturingYear() {
         return manufacturingYear;
     }
-
-
 }

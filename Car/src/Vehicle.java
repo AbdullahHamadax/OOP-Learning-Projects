@@ -59,8 +59,4 @@ abstract public class Vehicle {
     }
 
     abstract int getManufacturingYear();
-
-    public void setManufacturingYear(int manufacturingYear) {
-        this.manufacturingYear = manufacturingYear;
-    }
 }
