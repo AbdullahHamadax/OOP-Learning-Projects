@@ -33,7 +33,7 @@ git clone https://github.com/AbdullahHamadax/OOP-Learning-Projects.git
 2. Open the project in your preferred IDE.
 
 3. Run the `Main.java` file to start the Vehicle Rental System.
-
+```
 ## 📝 Usage
 
 1. Upon launching the application, you will be presented with a menu with the following options:
@@ -76,5 +76,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and test them thoroughly.
 4. Commit your changes and create a pull request.
-```
 
