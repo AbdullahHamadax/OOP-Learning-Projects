@@ -59,13 +59,13 @@ Before you start, make sure you have the following:
 2. **Main Menu**:
    <img src="screenshots/main-menu.png" width="600">
    
-3. **Viewing Available Vehicles (Prompt-based)**:
+3. **Viewing Available Vehicles (Dynamic Content)**:
    <img src="screenshots/view-vehicles.png" width="600">
    
-4. **Renting Available Vehicles (Prompt-based)**:
+4. **Renting Vehicles (Dynamic Content)**:
    <img src="screenshots/rent-vehicle.png" width="600">
    
-5. **Adding Vehicles (Prompt-based)**:
+5. **Adding Vehicles (Dynamic Content)**:
    <img src="screenshots/add-vehicle.png" width="600">
 
 
