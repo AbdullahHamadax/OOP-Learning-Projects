@@ -19,7 +19,7 @@ Welcome to the **Vehicle Rental System** project! This Java-based console applic
 
 Before you start, make sure you have the following:
 
-- Java Development Kit (JDK) ☕
+- Java Development Kit (JDK) ☕ preferably the latest
 - Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code 🧪
 ```
 ## 🛠 Getting Started
@@ -32,6 +32,7 @@ Before you start, make sure you have the following:
 2. Open the project in your preferred IDE.
 
 3. Run the `Main.java` file to start the Vehicle Rental System.
+
 ## 📝 Usage
 
 1. Upon launching the application, you will be presented with a menu with the following options:
@@ -74,5 +75,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and test them thoroughly.
 4. Commit your changes and create a pull request.
-
 ```
