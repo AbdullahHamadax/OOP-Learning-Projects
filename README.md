@@ -3,7 +3,9 @@
 
 I will be making really simple (possibly one) projects in this repo for the purpose of learning OOP topics.
 
-Welcome to the *Vehicle Rental System* project! This Java-based console application is designed to help you learn Object-Oriented Programming (OOP) concepts while managing a rental inventory of motorcycles, trucks, and cars. Let's dive in!
+## 🚗 Vehicle Rental System 🚗
+
+Welcome to the **Vehicle Rental System** project! This Java-based console application is designed to help you learn Object-Oriented Programming (OOP) concepts while managing a rental inventory of motorcycles, trucks, and cars. Let's dive in!
 
 ## 🚀 Features
 
