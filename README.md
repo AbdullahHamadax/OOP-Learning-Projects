@@ -53,10 +53,15 @@ Before you start, make sure you have the following:
 5. Exit the application by selecting option 4.
 
 ## 📸 Screenshots
+1. **Welcome Message**:
 ![Welcome Screenshot](screenshots/welcome.png)
+2. **Main Menu**:
 ![Main Menu](screenshots/main-menu.png)
+3. **Viewing Available Vehicles (Prompt-based):
 ![View Available Vehicles](screenshots/view-vehicles.png)
+4.  **Renting Available Vehicles (Prompt-based):
 ![Rent a Vehicle](screenshots/rent-vehicle.png)
+5. ** Adding Vehicles (Prompt-based)**:
 ![Add a Vehicle](screenshots/add-vehicle.png)
 
 ## 📂 Project Structure
