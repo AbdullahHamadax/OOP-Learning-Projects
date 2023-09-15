@@ -1,7 +1,7 @@
 ```markdown
 # 🚗 OOP Learning Projects 🏍
 
-I will be making really simple (possibly one) projects in this repo for the purpose of learning OOP topics.
+I will be making really simple (most likely one) projects in this repo for the purpose of learning OOP topics.
 
 ## 🚗 Vehicle Rental System 🚗
 
