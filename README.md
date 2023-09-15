@@ -94,7 +94,7 @@ The project is organized into the following classes:
 - `Motorcycle.java`: A class representing motorcycle-specific properties and behaviors.
 - `Truck.java`: A class representing truck-specific properties and behaviors.
 - `Car.java`: A class representing car-specific properties and behaviors.
-( New classes will be added soon! )
+- ( New classes will be added soon! ) 🛠️
 
 ## 🤝 Contributing
 
