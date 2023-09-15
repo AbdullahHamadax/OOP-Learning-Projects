@@ -20,7 +20,7 @@ Welcome to the **Vehicle Rental System** project! This Java-based console applic
 Before you start, make sure you have the following:
 
 - Java Development Kit (JDK) ☕ preferably the latest
-- Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code 🧪
+- Integrated Development Environment (IDE) or Text Editor such as IntelliJ IDEA, or Visual Studio Code 🧪
 ```
 ## 🛠 Getting Started
 
