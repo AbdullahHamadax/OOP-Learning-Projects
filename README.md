@@ -21,18 +21,17 @@ Before you start, make sure you have the following:
 
 - Java Development Kit (JDK) ☕
 - Integrated Development Environment (IDE) such as Eclipse, IntelliJ IDEA, or Visual Studio Code 🧪
-
+```
 ## 🛠 Getting Started
 
 1. Clone the repository to your local machine:
 
 ```bash
    git clone https://github.com/AbdullahHamadax/OOP-Learning-Projects.git
-
+```
 2. Open the project in your preferred IDE.
 
 3. Run the `Main.java` file to start the Vehicle Rental System.
-```
 ## 📝 Usage
 
 1. Upon launching the application, you will be presented with a menu with the following options:
