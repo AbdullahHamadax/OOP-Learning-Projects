@@ -14,4 +14,4 @@ The Vehicle Rental System project revolves around several fundamental & must lea
 
 5. **Composition (🧰):** The project demonstrates composition by aggregating vehicle objects within ArrayLists for `Motorcycle`, `Truck`, and `Car`. This composition allows for managing and interacting with collections of vehicles. `( more types might be added in the future )`
 
-6. **Dynamic Binding (🧬):** Dynamic binding is achieved through method calls to the overridden methods such as `getTaxes` and `getManufacturingYear`. The appropriate method is dynamically bound at runtime based on the actual object type.
+6. **Dynamic Binding (🧬):** Dynamic binding is achieved through method calls to the overridden methods such as `getTaxes` and `getManufacturingYear`. The appropriate method is dynamically bound at runtime based on the actual object type, I think you can notice t  hat this is related to **Polymorphism(🦄)**
