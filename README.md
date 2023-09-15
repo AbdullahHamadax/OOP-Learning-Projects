@@ -53,7 +53,7 @@ Before you start, make sure you have the following:
 5. Exit the application by selecting option 4.
 
 ## 📸 Screenshots
-
+![Welcome Screenshot](screenshots/welcome.png)
 ![Main Menu](screenshots/main-menu.png)
 ![View Available Vehicles](screenshots/view-vehicles.png)
 ![Rent a Vehicle](screenshots/rent-vehicle.png)
