@@ -12,7 +12,7 @@ Welcome to the **Vehicle Rental System** project! This Java-based console applic
 - Add new vehicles to the inventory with details such as name, model, price, quantity, type, and manufacturing year 📝
 - Validation of user inputs to ensure data integrity ✅
 - Dynamic tax calculation based on the vehicle type 🧮
-- User-friendly command-line interface 💻
+- User-friendly command-line interface 💻 ( I hate java's GUI )
 - Clear and structured codebase with modular design 🧱
 
 ## 📋 Prerequisites
