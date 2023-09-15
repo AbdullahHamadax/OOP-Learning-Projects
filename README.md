@@ -54,19 +54,20 @@ Before you start, make sure you have the following:
 
 ## 📸 Screenshots
 1. **Welcome Message**:
-   <img src="screenshots/welcome.png" width="400" height="400">
+   <img src="screenshots/welcome.png" width="600">
    
 2. **Main Menu**:
-   <img src="screenshots/main-menu.png" width="400" height="400">
+   <img src="screenshots/main-menu.png" width="600">
    
 3. **Viewing Available Vehicles (Prompt-based)**:
-   <img src="screenshots/view-vehicles.png" width="400" height="400">
+   <img src="screenshots/view-vehicles.png" width="600">
    
 4. **Renting Available Vehicles (Prompt-based)**:
-   <img src="screenshots/rent-vehicle.png" width="400" height="400">
+   <img src="screenshots/rent-vehicle.png" width="600">
    
 5. **Adding Vehicles (Prompt-based)**:
-   <img src="screenshots/add-vehicle.png" width="400" height="400">
+   <img src="screenshots/add-vehicle.png" width="600">
+
 
 
 
