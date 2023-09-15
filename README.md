@@ -37,7 +37,7 @@ Before you start, make sure you have the following:
 
 ## 📝 Usage
 
-1. Upon launching the application, you will be presented with a menu with the following options:
+1. Upon launching the application, you will be presented with a nice welcome message & a menu with the following options:
 
    - View available vehicles 🚗
    - Rent a vehicle 🏍
