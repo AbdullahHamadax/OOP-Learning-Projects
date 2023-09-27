@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb6127e-e0ea-421d-abca-57a4c5b6dd60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OOP-Learning-Projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOP-Learning-Projects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/Bank.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/out/production/Bank/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/out/production/Bank/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Car/src/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vehicle Rental/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Vehicle Rental/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vehicle Rental/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vehicle Rental/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Vehicle Rental/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Vehicle Rental/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Vehicle Rental/out/production/Car/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,25 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/OOP-Learning-Projects/lib/mysql-connector-j-8.1.0.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "F:/OOP-Learning-Projects/Vehicle Rental/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,6 +69,7 @@
       <workItem from="1695650635590" duration="876000" />
       <workItem from="1695708274841" duration="102000" />
       <workItem from="1695708418717" duration="3404000" />
+      <workItem from="1695791568519" duration="64000" />
     </task>
     <servers />
   </component>
