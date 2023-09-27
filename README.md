@@ -1,7 +1,7 @@
 ```markdown
 # 🚗 OOP Learning Projects 🏍
 
-I will be making really simple (possibly one) projects in this repo for the purpose of learning OOP topics.
+I will be making really simple (most likely one) projects in this repo for the purpose of learning OOP topics.
 
 ## 🚗 Vehicle Rental System 🚗
 
@@ -53,11 +53,37 @@ Before you start, make sure you have the following:
 5. Exit the application by selecting option 4.
 
 ## 📸 Screenshots
+1. **Welcome Message**:
+   <img src="screenshots/welcome.png" width="600">
+   
+2. **Main Menu**:
+   <img src="screenshots/main-menu.png" width="600">
+   
+3. **Viewing Available Vehicles (Dynamic Content)**:
+   <img src="screenshots/view-vehicles.png" width="600">
+   
+4. **Renting Vehicles (Dynamic Content)**:
+   <img src="screenshots/rent-vehicle.png" width="600">
+   
+5. **Adding Vehicles (Dynamic Content)**:
+   <img src="screenshots/add-vehicle.png" width="600">
 
-![Main Menu](screenshots/main-menu.png)
-![View Available Vehicles](screenshots/view-vehicles.png)
-![Rent a Vehicle](screenshots/rent-vehicle.png)
-![Add a Vehicle](screenshots/add-vehicle.png)
+## 🧱 Object-Oriented Programming (OOP) Concepts 🎯
+
+The Vehicle Rental System project revolves around several fundamental & must learn for all students OOP concepts:
+
+1. **Inheritance (🏭):** Inheritance is utilized to create a hierarchy of vehicle types. The base class, `Vehicle`, is extended by `Motorcycle`, `Truck`, and `Car` classes, inheriting common properties and behaviors while allowing for specialization.
+
+2. **Polymorphism (🦄):** Polymorphism is achieved through method overriding in the subclasses. Each vehicle type (`Motorcycle`, `Truck`, and `Car`) provides its own implementation of the `getTaxes` and `getManufacturingYear` methods, demonstrating polymorphic behavior `( more methods might ba added in the future )`
+
+3. **Encapsulation (🔒):** Encapsulation is maintained by using private member variables and providing accessors (the usual getters and setters) where necessary to control access to the properties of vehicle objects, ensuring data integrity/security.
+
+4. **Abstraction (🧩):** Abstraction is demonstrated through the abstract class `Vehicle`, which defines a blueprint for all vehicle types. Subclasses provide concrete implementations while adhering to the common structure defined in the abstract class, you can easily observe that abstraction is related to inheritance in some way.
+
+5. **Composition (🧰):** The project demonstrates composition by aggregating vehicle objects within ArrayLists for `Motorcycle`, `Truck`, and `Car`. This composition allows for managing and interacting with collections of vehicles. `( more types might be added in the future )`
+
+6. **Dynamic Binding (🧬):** Dynamic binding is achieved through method calls to the overridden methods such as `getTaxes` and `getManufacturingYear`. The appropriate method is dynamically bound at runtime based on the actual object type, I think you can notice t  hat this is related to **Polymorphism(🦄)**
+
 
 ## 📂 Project Structure
 
@@ -68,6 +94,7 @@ The project is organized into the following classes:
 - `Motorcycle.java`: A class representing motorcycle-specific properties and behaviors.
 - `Truck.java`: A class representing truck-specific properties and behaviors.
 - `Car.java`: A class representing car-specific properties and behaviors.
+- ( New classes will be added soon! ) 🛠️
 
 ## 🤝 Contributing
 
