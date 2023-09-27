@@ -14,17 +14,17 @@ public class Main {
 
     static void startingData() {
         m.add(new Motorcycle("Harley-Davidson", "Sportster", 12000, 5, "Yes", 2023));
-        m.add(new Motorcycle("Raven X1", "RXT-500", 9999, 10, "No", 2022));
-        m.add(new Motorcycle("Viper V2", "VP-750S", 12499, 12, "Yes", 2023));
+        m.add(new Motorcycle("Raven X1", "RXT-500", 9999, 5, "No", 2022));
+        m.add(new Motorcycle("Viper V2", "VP-750S", 12499, 4, "Yes", 2023));
         m.add(new Motorcycle("Zenith Z5", "ZNX-3000R", 8799, 7, "No", 2020));
         t.add(new Truck("Ford", "F-150", 40000, 9, "OpenTruck", 2017));
-        t.add(new Truck("Atlas Prime Mover", "APM-350", 55900, 30, "TrailerTruck", 2019));
-        t.add(new Truck("Goliath XL", "GX-5000", 64750, 20, "ContainerTruck", 2021));
+        t.add(new Truck("Atlas Prime Mover", "APM-350", 55900, 3, "TrailerTruck", 2019));
+        t.add(new Truck("Goliath XL", "GX-5000", 64750, 2, "ContainerTruck", 2021));
         t.add(new Truck("Chevrolet", "Silverado", 38000, 1, "TrailerTruck", 2023));
-        c.add(new Car("Toyota", "Camary", 25000, 15, "Sedan", 2022));
-        c.add(new Car("Honda", "Civic", 22000, 12, "Sedan", 2023));
+        c.add(new Car("Toyota", "Camary", 25000, 5, "Sedan", 2022));
+        c.add(new Car("Honda", "Civic", 22000, 7, "Sedan", 2023));
         c.add(new Car("Ford", "Mustang", 35000, 8, "SportsCar", 2024));
-        c.add(new Car("BMW", "3 Series", 42000, 10, "Sedan", 2024));
+        c.add(new Car("BMW", "3 Series", 42000, 4, "Sedan", 2024));
     }
 
     public static void proceed() {
@@ -142,9 +142,15 @@ public class Main {
             String vName = input.next();
             if (!vName.matches("[a-zA-Z]+")) { // reason for if is to not run the do while once :p
                 do {
-                    System.out.println("Please enter a valid name A-Z or a-z");
+                    System.out.println("Please enter a valid vehicle name (A-Z or a-z)");
                     vName = input.next();
                 } while (!vName.matches("[a-zA-Z]+"));
+            }
+            if (vName.length()<=3) {
+                do {
+                    System.out.println("Motorcycle name must exceed 3 characters ");
+                    vName = input.next();
+                } while (vName.length()<=3);
             }
             System.out.println("Enter Moto price: ");
             int vPrice = input.nextInt();
@@ -185,6 +191,12 @@ public class Main {
                     tName = input.next();
                 } while (!tName.matches("[a-zA-Z]+"));
             }
+            if (tName.length()<=7) {
+                do {
+                    System.out.println("Truck name must exceed 7 characters ");
+                    tName = input.next();
+                } while (tName.length()<=7);
+            }
             System.out.println("Enter Truck price: ");
             int tPrice = input.nextInt();
             if ((tPrice < 20000)) {
@@ -224,6 +236,12 @@ public class Main {
                     cName = input.next();
                 } while (!cName.matches("[a-zA-Z]+"));
             }
+            if (cName.length()<=6) {
+                do {
+                    System.out.println("Car name must exceed 6 characters ");
+                    cName = input.next();
+                } while (cName.length()<=6);
+            }
             System.out.println("Enter Car price: ");
             int cPrice = input.nextInt();
             if (cPrice < 20000) {
@@ -256,6 +274,7 @@ public class Main {
             c.add(newCar);
         }
     }
+
 
     static void displayMotorcycles() {
         System.out.println("Motorcycles:");
