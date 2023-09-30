@@ -17,7 +17,7 @@ I will be making really simple (possibly one) projects in this repo for the purp
 
 Before you start, make sure you have the following:
 
-- Java Development Kit (JDK) ☕ preferably *21* the latest
+- Java Development Kit (JDK) ☕ preferably 21 or the latest
 - Integrated Development Environment (IDE) or Text Editor such as IntelliJ IDEA, or Visual Studio Code 🧪
 ```
 ## 🛠 Getting Started
