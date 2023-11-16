@@ -33,7 +33,7 @@ Before you start, make sure you have the following:
 
 ## 🧱 Object-Oriented Programming (OOP) Concepts that are in some of my projects 🎯
 
-My repo revolves around several fundamental & must OOP concepts learn for all students, which are:
+My repo revolves around several fundamental & must learn OOP concepts learn for all students, which are:
 
 1. **Inheritance (🏭):** 
 2. **Polymorphism (🦄):**
